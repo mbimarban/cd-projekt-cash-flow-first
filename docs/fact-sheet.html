@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CD Projekt — Cash Flow First Fact Sheet</title>
+<style>
+  :root {
+    --red: #C8102E;
+    --red-muted: #8B0A1E;
+    --ink: #1A1A1A;
+    --ink-soft: #2E2E2E;
+    --rule: #D8D0C8;
+    --rule-light: #EDE8E2;
+    --bg: #F5F2EE;
+    --card: #FFFFFF;
+    --label: #7A7268;
+    --small: 10px;
+    --body: 11.5px;
+    --caption: 10.5px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: var(--body);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 48px 36px;
+    background: var(--card);
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    border-bottom: 2.5px solid var(--ink);
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+    gap: 16px;
+  }
+
+  .header-left .overline {
+    font-family: 'Courier New', monospace;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 4px;
+  }
+
+  .header-left h1 {
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+
+  .header-left h1 span {
+    color: var(--red);
+  }
+
+  .header-right {
+    text-align: right;
+    font-family: 'Courier New', monospace;
+    font-size: 9px;
+    color: var(--label);
+    letter-spacing: 0.08em;
+    padding-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* ── THESIS BAR ── */
+  .thesis {
+    border-left: 3px solid var(--red);
+    padding: 10px 16px;
+    background: #FAF8F5;
+    margin-bottom: 24px;
+    font-size: 11px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  .thesis strong {
+    color: var(--ink);
+    font-weight: bold;
+  }
+
+  /* ── SECTION LABEL ── */
+  .section-label {
+    font-family: 'Courier New', monospace;
+    font-size: 8.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--red);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+  }
+
+  /* ── GRID ── */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 20px; }
+
+  /* ── BIG NUMBER BLOCK ── */
+  .kpi-block {
+    padding: 0;
+  }
+
+  .kpi-value {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+
+  .kpi-value.accent { color: var(--red); }
+
+  .kpi-unit {
+    font-family: 'Courier New', monospace;
+    font-size: 9px;
+    color: var(--label);
+    letter-spacing: 0.06em;
+  }
+
+  .kpi-label {
+    font-size: 10px;
+    color: var(--ink-soft);
+    margin-top: 3px;
+    line-height: 1.4;
+  }
+
+  /* ── TEXT BLOCKS ── */
+  .text-block {
+    font-size: var(--body);
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  /* ── SIGNAL LIST ── */
+  .signal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .signal-list li {
+    font-size: 10.5px;
+    line-height: 1.55;
+    padding: 4px 0 4px 16px;
+    position: relative;
+    border-bottom: 1px solid var(--rule-light);
+    color: var(--ink-soft);
+  }
+
+  .signal-list li:last-child { border-bottom: none; }
+
+  .signal-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    font-size: 8px;
+    top: 6px;
+  }
+
+  .signal-list.positive li::before { color: #2D7D46; }
+  .signal-list.negative li::before { color: var(--red); }
+
+  /* ── METRICS TABLE ── */
+  .metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5px;
+  }
+
+  .metrics-table td {
+    padding: 5px 0;
+    border-bottom: 1px solid var(--rule-light);
+    vertical-align: top;
+  }
+
+  .metrics-table td:last-child {
+    text-align: right;
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    color: var(--ink);
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .metrics-table td:first-child {
+    color: var(--label);
+    padding-right: 8px;
+  }
+
+  .metrics-table tr:last-child td { border-bottom: none; }
+
+  /* ── DIVIDER ── */
+  .rule { border: none; border-top: 1px solid var(--rule); margin: 20px 0; }
+  .rule-heavy { border: none; border-top: 2px solid var(--ink); margin: 20px 0; }
+
+  /* ── PIPELINE ── */
+  .pipeline-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 0;
+  }
+
+  .pipeline-item {
+    border: 1px solid var(--rule);
+    padding: 10px 12px;
+  }
+
+  .pipeline-franchise {
+    font-family: 'Courier New', monospace;
+    font-size: 8px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 4px;
+  }
+
+  .pipeline-title {
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+
+  .pipeline-note {
+    font-size: 10px;
+    color: var(--label);
+    line-height: 1.4;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 12px;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: end;
+  }
+
+  .disclaimer {
+    font-family: 'Courier New', monospace;
+    font-size: 8.5px;
+    color: var(--label);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .footer-meta {
+    font-family: 'Courier New', monospace;
+    font-size: 8.5px;
+    color: var(--label);
+    text-align: right;
+    line-height: 1.7;
+  }
+
+  .red-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: var(--red);
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+  .snapshot-box {
+    background: #FAF8F5;
+    border: 1px solid var(--rule);
+    padding: 12px 14px;
+    font-size: 11px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+
+  .col-section { }
+
+  @media print {
+    body { background: white; }
+    .page { padding: 24px 32px; min-height: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="overline">Equity Research · One-Pager · Cash Flow First</div>
+      <h1>CD Projekt <span>—</span> Cash Flow First Fact Sheet</h1>
+    </div>
+    <div class="header-right">
+      CDR PW · WIG20<br>
+      GPW Warsaw<br>
+      Dane: FY 2025<br>
+      Stan na: kwiecień 2026
+    </div>
+  </div>
+
+  <!-- THESIS -->
+  <div class="thesis">
+    <strong>Główna teza:</strong> CD Projekt to finansowo bezpiecznie ustawiona spółka wysokiego ryzyka projektowego.
+    Gotówka daje czas. Bilans daje bezpieczeństwo. Pipeline daje potencjał wzrostu.
+    <strong>Ryzyko wykonania zdecyduje o wartości dla akcjonariusza.</strong>
+  </div>
+
+  <!-- KPI ROW -->
+  <div class="section-label">Kluczowe liczby FY 2025</div>
+  <div class="grid-4" style="margin-bottom: 24px;">
+    <div class="kpi-block">
+      <div class="kpi-value">7,40</div>
+      <div class="kpi-unit">current ratio</div>
+      <div class="kpi-label">Wyjątkowa płynność krótkoterminowa</div>
+    </div>
+    <div class="kpi-block">
+      <div class="kpi-value">1 325</div>
+      <div class="kpi-unit">mln PLN</div>
+      <div class="kpi-label">Płynne rezerwy finansowe</div>
+    </div>
+    <div class="kpi-block">
+      <div class="kpi-value">590,9</div>
+      <div class="kpi-unit">mln PLN</div>
+      <div class="kpi-label">CFO (przepływy z dział. operacyjnej)</div>
+    </div>
+    <div class="kpi-block">
+      <div class="kpi-value accent">1,13</div>
+      <div class="kpi-unit">CCR</div>
+      <div class="kpi-label">Cash Conversion Ratio — dział. kontynuowana</div>
+    </div>
+  </div>
+
+  <!-- TWO COLUMNS: BILANS + RACHUNEK -->
+  <div class="grid-2" style="margin-bottom: 24px;">
+    <div class="col-section">
+      <div class="section-label">Bilans (31.12.2025)</div>
+      <table class="metrics-table">
+        <tr><td>Kapitał własny</td><td>3 289 859 tys. PLN</td></tr>
+        <tr><td>Zobowiązania razem</td><td>213 461 tys. PLN</td></tr>
+        <tr><td>w tym: kredyty i pożyczki</td><td>0 PLN</td></tr>
+        <tr><td>Aktywa trwałe</td><td>2 168 647 tys. PLN</td></tr>
+        <tr><td>Aktywa obrotowe</td><td>1 334 673 tys. PLN</td></tr>
+        <tr><td>Aktywa ogółem</td><td>3 503 320 tys. PLN</td></tr>
+      </table>
+    </div>
+    <div class="col-section">
+      <div class="section-label">Wynik (FY 2025)</div>
+      <table class="metrics-table">
+        <tr><td>Przychody ze sprzedaży</td><td>866 989 tys. PLN</td></tr>
+        <tr><td>EBIT (zysk operacyjny)</td><td>470 648 tys. PLN</td></tr>
+        <tr><td>Zysk brutto</td><td>538 319 tys. PLN</td></tr>
+        <tr><td>Zysk netto — dział. kontynuowana</td><td>520 869 tys. PLN</td></tr>
+        <tr><td>CFO</td><td>590 880 tys. PLN</td></tr>
+        <tr><td>Development burn</td><td>513 241 tys. PLN</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT -->
+  <div class="section-label">Cash-First Snapshot</div>
+  <div class="snapshot-box" style="margin-bottom: 24px;">
+    CD Projekt nie ma dziś problemu płynnościowego. Cash engine nadal działa —
+    CFO w 2025 r. pokrywa zysk netto z działalności kontynuowanej (CCR 1,13).
+    Brak kredytów i pożyczek przy kapitale własnym przekraczającym 3,29 mld PLN stawia spółkę
+    w wyjątkowo bezpiecznej pozycji bilansowej.
+    Największe ryzyko nie leży w bilansie, lecz w egzekucji pipeline'u i jakości przyszłych premier.
+  </div>
+
+  <!-- SIGNALS: 2 COLUMNS -->
+  <div class="grid-2" style="margin-bottom: 24px;">
+    <div class="col-section">
+      <div class="section-label">Pozytywne sygnały</div>
+      <ul class="signal-list positive">
+        <li>Brak kredytów i pożyczek</li>
+        <li>Płynne rezerwy finansowe: 1 325 mln PLN</li>
+        <li>CFO: 590,9 mln PLN</li>
+        <li>CCR na działalności kontynuowanej: 1,13</li>
+        <li>Current ratio: 7,40</li>
+        <li>Wysoka rentowność działalności kontynuowanej</li>
+      </ul>
+    </div>
+    <div class="col-section">
+      <div class="section-label">Red flags</div>
+      <ul class="signal-list negative">
+        <li>Development burn: 513,2 mln PLN</li>
+        <li>Nakłady na prace rozwojowe rosną szybko</li>
+        <li>Koszty sprzedaży rosną szybciej niż przychody</li>
+        <li>Zysk netto razem zawiera efekt działalności zaniechanej / GOG</li>
+        <li>Wycena rynkowa może wyprzedzać fundamenty, jeśli zakłada sukces przyszłych premier</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PIPELINE -->
+  <div class="section-label">Pipeline — długofalowa perspektywa produktowa</div>
+  <div class="pipeline-grid" style="margin-bottom: 12px;">
+    <div class="pipeline-item">
+      <div class="pipeline-franchise">Wiedźmin</div>
+      <div class="pipeline-title">Nowa trylogia wiedźmińska</div>
+      <div class="pipeline-note">Projekt Syriusz · Remake Wiedźmina 1 oraz inne nieogłoszone projekty</div>
+    </div>
+    <div class="pipeline-item">
+      <div class="pipeline-franchise">Cyberpunk</div>
+      <div class="pipeline-title">Cyberpunk 2</div>
+      <div class="pipeline-note">Sequel kontynuujący markę po sukcesie Cyberpunk 2077</div>
+    </div>
+    <div class="pipeline-item">
+      <div class="pipeline-franchise">Nowe IP</div>
+      <div class="pipeline-title">Projekt Hadar</div>
+      <div class="pipeline-note">Nowa marka — nieogłoszone szczegóły</div>
+    </div>
+  </div>
+  <div class="text-block" style="font-size: 10.5px; color: var(--label); margin-bottom: 24px;">
+    Development burn (513 mln PLN) jest naturalnym rdzeniem modelu gamingowego, ale musi przełożyć się na przyszłe premiery, sprzedaż i CFO.
+    Pipeline jest potencjalnym źródłem przyszłej wartości — wymagającym skutecznej realizacji.
+  </div>
+
+  <!-- DYWIDENDA + WNIOSEK -->
+  <div class="grid-2" style="margin-bottom: 0;">
+    <div class="col-section">
+      <div class="section-label">Dywidenda</div>
+      <div class="text-block">
+        Dywidenda jest możliwa dzięki silnemu bilansowi, jednak zwrot dla akcjonariusza jest podporządkowany finansowaniu pipeline'u.
+        Dywidenda wypłacona w 2025 r. pochodziła z zysku za 2024 r.
+      </div>
+    </div>
+    <div class="col-section">
+      <div class="section-label">Finalny wniosek</div>
+      <div class="text-block">
+        CD Projekt nie jest dziś historią o przetrwaniu. To historia o tym, czy mocny bilans i działający cash engine
+        pozwolą sfinansować pipeline, który w przyszłości wygeneruje nowy CFO, zysk i wartość dla akcjonariusza.
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="disclaimer">
+      <span class="red-dot"></span>
+      Materiał edukacyjno-analityczny. Nie stanowi rekomendacji inwestycyjnej ani porady finansowej.<br>
+      Dane źródłowe: CD Projekt S.A. Fact Sheet 01.04.2026 / Raporty finansowe Grupy Kapitałowej CD PROJEKT.
+    </div>
+    <div class="footer-meta">
+      CDR PW · GPW Warsaw<br>
+      Cash Flow First Series<br>
+      Kwiecień 2026
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

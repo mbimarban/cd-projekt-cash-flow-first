@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CD Projekt — Cash Flow First Analysis. Edukacyjny microsite analityczny pokazujący CD Projekt przez pryzmat gotówki, bilansu i pipeline'u gier.">
+  <title>CD Projekt — Cash Flow First Analysis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Przejdź do treści</a>
+
+  <div class="page-shell">
+
+    <header class="site-header">
+      <div class="brand-lockup">
+        <span class="eyebrow">Microsite analityczny dla inwestorów</span>
+        <h1>CD Projekt — Cash Flow First Analysis</h1>
+        <p class="hero-thesis">Gotówka daje czas. Bilans daje bezpieczeństwo.
+          <button class="glossary-term" type="button" data-term="pipeline">Pipeline</button>,
+          czyli portfel przyszłych projektów, daje potencjał wzrostu.
+          Ryzyko wykonania zdecyduje o wartości.</p>
+      </div>
+    </header>
+
+    <div class="layout-body">
+
+      <!-- ===== SIDEBAR NAV ===== -->
+      <nav class="section-nav" aria-label="Nawigacja po sekcjach">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Sekcje</button>
+        <ul id="nav-list">
+          <li><a href="#snapshot">Snapshot</a></li>
+          <li><a href="#cash-engine">Cash Engine</a></li>
+          <li><a href="#development-burn">Development Burn</a></li>
+          <li><a href="#balance-sheet">Bilans</a></li>
+          <li><a href="#quality">Zysk i alokacja</a></li>
+          <li><a href="#pipeline">Pipeline</a></li>
+          <li><a href="#red-flags">Ryzyka</a></li>
+          <li><a href="#appendix">Appendix</a></li>
+        </ul>
+      </nav>
+
+      <!-- ===== MAIN ===== -->
+      <main id="main-content">
+
+        <!-- HERO KPI -->
+        <section class="hero-panel" aria-label="Kluczowe wskaźniki">
+          <div class="hero-kpi-grid">
+            <div class="hero-kpi">
+              <span class="kpi-label">Płynność</span>
+              <strong class="kpi-num">7,40</strong>
+              <span class="kpi-meta">current ratio 2025</span>
+            </div>
+            <div class="hero-kpi">
+              <span class="kpi-label">Płynne rezerwy</span>
+              <strong class="kpi-num">1 324 910</strong>
+              <span class="kpi-meta">tys. PLN</span>
+            </div>
+            <div class="hero-kpi">
+              <span class="kpi-label">CFO 2025</span>
+              <strong class="kpi-num">590 880</strong>
+              <span class="kpi-meta">tys. PLN</span>
+            </div>
+            <div class="hero-kpi">
+              <span class="kpi-label">Development burn</span>
+              <strong class="kpi-num">513 241</strong>
+              <span class="kpi-meta">tys. PLN — nakłady na prace rozwojowe</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- NAJWAŻNIEJSZE W 60 SEKUND -->
+        <section class="quick-read-section">
+          <h2 class="quick-read-heading">Najważniejsze w 60 sekund</h2>
+          <ol class="quick-read-list">
+            <li>CD Projekt nie ma dziś problemu płynnościowego — rezerwy finansowe wynoszą 1&nbsp;324&nbsp;910 tys. PLN przy braku kredytów i pożyczek.</li>
+            <li>Cash engine nadal działa: <button class="glossary-term" type="button" data-term="cfo">CFO</button> wyniósł 590&nbsp;880 tys. PLN, a wskaźnik jakości gotówkowej (CCR) na działalności kontynuowanej to 1,13.</li>
+            <li><button class="glossary-term" type="button" data-term="development-burn">Development burn</button> (513&nbsp;241 tys. PLN) jest naturalnym rdzeniem modelu <button class="glossary-term" type="button" data-term="aaa">AAA</button>, ale wymaga przyszłego zwrotu w formie premier i cash flow.</li>
+            <li>Dywidenda jest możliwa (99&nbsp;911 tys. PLN wypłacone z zysku za 2024 r.), ale podporządkowana finansowaniu pipeline'u.</li>
+            <li>Główne ryzyko to wykonanie pipeline'u — nie bilans. Bilans kupuje czas, ale nie sukces projektów.</li>
+          </ol>
+        </section>
+
+        <!-- 01 SNAPSHOT -->
+        <section id="snapshot" class="content-section">
+          <div class="section-heading">
+            <p class="section-kicker">01</p>
+            <h2>Executive CFO Snapshot</h2>
+          </div>
+
+          <p class="section-thesis">CD Projekt to finansowo bezpiecznie ustawiona spółka wysokiego ryzyka projektowego: bardzo mocny bilans i silny cash engine kupują czas na pipeline, ale wartość dla akcjonariusza zależy od jakości egzekucji.</p>
+
+          <div class="kpi-trio">
+            <div class="kpi-item">
+              <span class="kpi-label">Current ratio</span>
+              <strong class="kpi-num">7,40</strong>
+              <span class="kpi-meta">wobec 6,32 rok wcześniej</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-label">Płynne rezerwy</span>
+              <strong class="kpi-num">1 324 910</strong>
+              <span class="kpi-meta">tys. PLN</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-label">CFO 2025</span>
+              <strong class="kpi-num">590 880</strong>
+              <span class="kpi-meta">tys. PLN</span>
+            </div>
+          </div>
+
+          <aside class="takeaway-box">
+            <h3>Co to znaczy dla akcjonariusza</h3>
+            <p>Bilans daje czas i bezpieczeństwo, ale wartość dla akcjonariusza zależy od tego, czy rosnące nakłady zamienią się w premiery, marże i powtarzalny cash flow.</p>
+          </aside>
+
+          <div class="accordion-group">
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Ramy analizy: dlaczego Cash Flow First?</button></h3>
+              <div class="accordion-panel" hidden>
+                <p>CD Projekt nie powinien być analizowany jak typowa spółka produkcyjna. W modelu sprzedaży gier cyfrowych centrum analizy nie są zapasy, lecz trwałość monetyzacji istniejącego <button class="glossary-term" type="button" data-term="ip">IP</button>, siła długiego ogona sprzedaży, bezpieczeństwo bilansu i jakość wykonania kolejnych premier.</p>
+                <p>Dlatego sekwencja analizy wygląda inaczej niż w klasycznym przemyśle: cash engine obecnego katalogu, development burn nowych projektów, bezpieczeństwo bilansu, alokacja kapitału, opcjonalność pipeline'u.</p>
+                <p>To nie jest analiza oparta wyłącznie na bieżącym zysku. To analiza opcji na przyszły pipeline. Obecna gotówka i brak zadłużenia zmniejszają ryzyko przetrwania, ale nie eliminują ryzyka wykonania. Wartość akcji będzie zależeć od tego, czy nakłady na Wiedźmina 4, Cyberpunka 2 i kolejne <button class="glossary-term" type="button" data-term="ip">IP</button> zamienią się w wysokomarżowe premiery, sprzedaż długiego ogona i powtarzalny cash flow.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Pełne omówienie Snapshot</button></h3>
+              <div class="accordion-panel" hidden>
+                <p>CD Projekt wygląda dziś jak spółka z bardzo bezpiecznym bilansem: current ratio 7,40, liquid reserve coverage 7,35 oraz brak kredytów i pożyczek. <button class="glossary-term" type="button" data-term="cfo">CFO</button> w 2025 wyniósł 590&nbsp;880 tys. PLN i pokrywa zysk netto z działalności kontynuowanej, co potwierdza jakość gotówkową biznesu.</p>
+                <p>Największe ryzyko nie leży w płynności, tylko w tym, że coraz więcej gotówki idzie w produkcję przyszłych gier — <button class="glossary-term" type="button" data-term="development-burn">development burn</button> w 2025 wyniósł 513&nbsp;241 tys. PLN. Kluczowe pytanie inwestora: czy <button class="glossary-term" type="button" data-term="pipeline">pipeline</button> przełoży się na nowe duże premiery.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 02 CASH ENGINE -->
+        <section id="cash-engine" class="content-section">
+          <div class="section-heading">
+            <p class="section-kicker">02</p>
+            <h2>Cash Engine</h2>
+          </div>
+
+          <p class="section-thesis">Bieżący katalog gier generuje silny, powtarzalny cash flow operacyjny bez zadłużenia — zysk ma pokrycie w gotówce.</p>
+
+          <div class="kpi-trio">
+            <div class="kpi-item">
+              <span class="kpi-label">CFO 2025</span>
+              <strong class="kpi-num">590 880</strong>
+              <span class="kpi-meta">tys. PLN</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-label">CCR kontynuowana</span>
+              <strong class="kpi-num">1,13</strong>
+              <span class="kpi-meta">zysk pokryty gotówką</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-label">Przychody 2025</span>
+              <strong class="kpi-num">866 989</strong>
+              <span class="kpi-meta">tys. PLN (+8,6% r/r)</span>
+            </div>
+          </div>
+
+          <aside class="takeaway-box">
+            <h3>Co to znaczy dla akcjonariusza</h3>
+            <p>Cash engine działa i jest dziś jednym z głównych filarów tezy inwestycyjnej. To nie zapasy są centrum analizy, lecz żywotność <button class="glossary-term" type="button" data-term="ip">IP</button> i siła monetyzacji katalogu.</p>
+          </aside>
+
+          <div class="accordion-group">
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Czy obecny katalog gier nadal generuje gotówkę?</button></h3>
+              <div class="accordion-panel" hidden>
+                <p>Tak. W CD Projekcie CFO pochodzi głównie ze sprzedaży już wydanych gier i dodatków. Cash engine działa, bo stare <button class="glossary-term" type="button" data-term="ip">IP</button> nadal monetyzuje się długo po premierze, a cyfrowy model sprzedaży nie wymaga ciężkiego finansowania zapasu jak w klasycznym przemyśle.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Czy zysk zamienia się w CFO?</button></h3>
+              <div class="accordion-panel" hidden>
+                <p>CFO 590&nbsp;880 tys. PLN jest wyższy od zysku netto z działalności kontynuowanej 520&nbsp;869 tys. PLN. CCR na działalności kontynuowanej wynosi 1,13, więc zysk ma pokrycie w gotówce. To jeden z najmocniejszych argumentów jakościowych po stronie bieżącego biznesu.</p>
+                <p>Dla porządku: gotówka z biznesu kontynuowanego wyniosła 511&nbsp;661 tys. PLN — wskaźnik pomocniczy używany do oddzielenia podstawowego cash engine od efektów działalności zaniechanej; nie traktować jako standardowego wskaźnika MSSF.</p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Czy cash engine finansuje przyszłe projekty?</button></h3>
+              <div class="accordion-panel" hidden>
+                <p>W dużej mierze tak. Spółka finansuje rozwój bez kredytów i pożyczek, korzystając z gotówki wypracowanej przez katalog oraz z dużych płynnych rezerw. Jednocześnie spadek płynnych rezerw o 147&nbsp;124 tys. PLN pokazuje, że rozwój pipeline'u ma realny koszt nawet przy wysokim CFO.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 03 DEVELOPMENT BURN -->
+        <section id="development-burn" class="content-section">
+          <div class="section-heading">
+            <p class="section-kicker">03</p>
+            <h2>Development Burn</h2>
+          </div>
+
+          <p class="section-thesis"><button class="glossary-term" type="button" data-term="development-burn">Development burn</button> w modelu <button class="glossary-term" type="button" data-term="aaa">AAA</button> nie jest problemem samym w sobie — problemem byłby burn bez późniejszego zwrotu.</p>
+
+          <div class="kpi-trio">
+            <div class="kpi-item">
+              <span class="kpi-label">Nakłady 2025</span>
+              <strong class="kpi-num">513 241</strong>
+              <span class="kpi-meta">tys. PLN</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-label">Aktywo prac rozwojowych</span>
+              <strong class="kpi-num">1 148 143</strong>
+              <span class="kpi-meta">tys. PLN w bilansie</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-label">Wzrost nakładów r/r</span>
+              <strong class="kpi-num">+105,9%</strong>
+              <span class="kpi-meta">główny development burn</span>
+            </div>
+          </div>
+
+          <aside class="takeaway-box">
+            <h3>Co to znaczy dla akcjonariusza</h3>
+            <p>Nakłady są strategicznie zrozumiałe, ale to one tworzą dziś główne ryzyko wykonania: aktywo w bilansie musi zostać obronione przyszłą sprzedażą i marżą.</p>
+          </aside>
+
+          <div class="accordion-group">
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Jak rozumieć development burn w modelu gamingowym?</button></h3>
+              <div class="accordion-panel" hidden>
+                <p>Development burn, czyli gotówka i nakłady pochłaniane przez produkcję nowych gier, w modelu AAA nie jest „problemem samym w sobie", bo rozwój dużych produkcji jest sednem biznesu.</p>
+                <p>Problem pojawiłby się dopiero wtedy, gdyby rosnące nakłady nie zamieniły się w przyszłe premiery, przychody i cash flow. W 2025 nakłady na prace rozwojowe wyniosły 513&nbsp;241 tys. PLN, a wartość aktywa „nakłady na prace rozwojowe" wzrosła do 1&nbsp;148&nbsp;143 tys. PLN.</p>
+                <blockquote class="signal-block">Development burn nie jest wadą samą w sobie. To paliwo przyszłej wartości. Problemem byłby burn bez późniejszego zwrotu.</blockquote>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 04 BILANS -->
+        <section id="balance-sheet" class="content-section">
+          <div class="section-heading">
+            <p class="section-kicker">04</p>
+            <h2>Bezpieczeństwo bilansu</h2>
+          </div>
+
+          <p class="section-thesis">Brak zadłużenia odsetkowego, liquid reserve coverage 7,35 i rosnący kapitał własny dają spółce maksymalny komfort finansowania pipeline'u.</p>
+
+          <div class="kpi-trio">
+            <div class="kpi-item">
+              <span class="kpi-label">Current ratio</span>
+              <strong class="kpi-num">7,40</strong>
+              <span class="kpi-meta">wobec 6,32 w 2024</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-label">Płynne rezerwy</span>
+              <strong class="kpi-num">1 324 910</strong>
+              <span class="kpi-meta">tys. PLN</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-label">Dług / kapitał własny</span>
+              <strong class="kpi-num">0,06</strong>
+              <span class="kpi-meta">brak kredytów i pożyczek</span>
+            </div>
+          </div>
+
+          <aside class="takeaway-box">
+            <h3>Co to znaczy dla akcjonariusza</h3>
+            <p>Bilans jest bardzo mocny. Spółka ma czas na rozwój pipeline'u bez presji refinansowania. Nadmiar gotówki nie gwarantuje jednak wzrostu kursu, jeśli rynek nie zobaczy jakości przyszłych premier.</p>
+          </aside>
+
+          <div class="accordion-group">
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Pełna tabela bilansu i płynności (2024–2025)</button></h3>
+              <div class="accordion-panel" hidden>
+                <div class="data-table-card">
+                  <table>
+                    <caption>Bilans i płynność — 2025 vs 2024 (dane w tys. PLN, 2024 jako dane przekształcone)</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Pozycja</th>
+                        <th scope="col">2024</th>
+                        <th scope="col">2025</th>
+                        <th scope="col">Komentarz</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><th scope="row">Płynne rezerwy finansowe</th><td>1 472 034</td><td>1 324 910</td><td>Nadal bardzo wysoka poduszka płynności.</td></tr>
+                      <tr><th scope="row">Środki pieniężne i ekwiwalenty</th><td>124 886</td><td>114 115</td><td>Sama gotówka to tylko część rezerw; ważne są też lokaty i obligacje.</td></tr>
+                      <tr><th scope="row">Kapitał własny</th><td>2 774 059</td><td>3 289 859</td><td>Finansuje 93,9% aktywów w 2025.</td></tr>
+                      <tr><th scope="row">Zobowiązania razem</th><td>252 379</td><td>213 461</td><td>Niski ciężar zobowiązań względem skali aktywów.</td></tr>
+                      <tr><th scope="row">Zobowiązania krótkoterminowe</th><td>229 805</td><td>180 304</td><td>Niska presja refinansowania.</td></tr>
+                      <tr><th scope="row">Current ratio</th><td>6,32</td><td>7,40</td><td>Wyraźna poprawa płynności krótkoterminowej.</td></tr>
+                      <tr><th scope="row">Liquid reserve coverage</th><td>6,41</td><td>7,35</td><td>Rezerwy wielokrotnie pokrywają zobowiązania bieżące.</td></tr>
+                      <tr><th scope="row">Kredyty i pożyczki</th><td>0</td><td>0</td><td>Brak zadłużenia odsetkowego.</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="note-card" style="margin-top:1rem">
+                  <h3>Test spójności bilansu</h3>
+                  <p>2025: Aktywa razem 3&nbsp;503&nbsp;320 = Kapitał własny 3&nbsp;289&nbsp;859 + Zobowiązania razem 213&nbsp;461. Bilans spójny.</p>
+                  <p>2024: Aktywa razem 3&nbsp;026&nbsp;438 = Kapitał własny 2&nbsp;774&nbsp;059 + Zobowiązania razem 252&nbsp;379. Bilans spójny.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 05 JAKOŚĆ ZYSKU -->
+        <section id="quality" class="content-section">
+          <div class="section-heading">
+            <p class="section-kicker">05</p>
+            <h2>Jakość zysku</h2>
+          </div>
+
+          <p class="section-thesis">Podstawowy biznes generuje gotówkę zgodną z zyskiem — CCR na działalności kontynuowanej wynosi 1,13 — choć całościowy wynik jest zaburzony jednorazowym efektem GOG.</p>
+
+          <div class="kpi-trio">
+            <div class="kpi-item">
+              <span class="kpi-label">CCR netto razem</span>
+              <strong class="kpi-num">0,99</strong>
+              <span class="kpi-meta">zaburzony efektem GOG</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-label">CCR kontynuowana</span>
+              <strong class="kpi-num">1,13</strong>
+              <span class="kpi-meta">lepsza miara core biznesu</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-label">Zysk — dz. kontynuowana</span>
+              <strong class="kpi-num">520 869</strong>
+              <span class="kpi-meta">tys. PLN</span>
+            </div>
+          </div>
+
+          <aside class="takeaway-box">
+            <h3>Co to znaczy dla akcjonariusza</h3>
+            <p>Podstawowy biznes generuje gotówkę zgodną z zyskiem. Inwestor powinien jednak oddzielać wynik powtarzalny od efektów jednorazowych i prezentacyjnych.</p>
+          </aside>
+
+          <div class="accordion-group">
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">GOG i działalność zaniechana — co zaburza obraz zysku?</button></h3>
+              <div class="accordion-panel" hidden>
+                <p>Zysk księgowy i gotówka to nie to samo. <button class="glossary-term" type="button" data-term="amortization">Amortyzacja nakładów na prace rozwojowe</button> jest kosztem niegotówkowym, więc sama z siebie nie tworzy gotówki, choć może wspierać tarczę podatkową.</p>
+                <p>CCR na zysku netto razem wyniósł 0,99, czyli prawie 1, ale ten wynik jest zaniżony przez jednorazowy efekt <button class="glossary-term" type="button" data-term="gog">działalności zaniechanej / GOG</button>. W 2025 zysk netto razem zawiera 73&nbsp;839 tys. PLN z działalności zaniechanej, czyli efekt związany z segmentem GOG.</p>
+                <p>Dlatego w analizie jakości biznesu lepiej patrzeć osobno na wynik z działalności kontynuowanej: 520&nbsp;869 tys. PLN. GOG poprawia wynik netto razem, ale nie powinien być traktowany jako powtarzalny element cash engine CD Projekt RED.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 06 ALOKACJA KAPITAŁU -->
+        <section id="capital-allocation" class="content-section">
+          <div class="section-heading">
+            <p class="section-kicker">06</p>
+            <h2>Alokacja kapitału i zwrot dla akcjonariusza</h2>
+          </div>
+
+          <p class="section-thesis">Spółka łączy finansowanie pipeline'u z wypłatą dla akcjonariuszy, ale skala wypłat pozostaje uzależniona od potrzeb rozwojowych.</p>
+
+          <div class="kpi-trio">
+            <div class="kpi-item">
+              <span class="kpi-label">Dywidenda wypłacona w 2025</span>
+              <strong class="kpi-num">99 911</strong>
+              <span class="kpi-meta">tys. PLN (1 zł/akcję)</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-label">Skup akcji własnych</span>
+              <strong class="kpi-num">22 424</strong>
+              <span class="kpi-meta">tys. PLN</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-label">Intencja zarządu</span>
+              <strong class="kpi-num">≥25%</strong>
+              <span class="kpi-meta">zysku netto średniorocznie</span>
+            </div>
+          </div>
+
+          <aside class="takeaway-box">
+            <h3>Co to znaczy dla akcjonariusza</h3>
+            <p>Dywidenda jest możliwa, bo bilans jest silny. Jej przyszła skala będzie jednak podporządkowana finansowaniu pipeline'u i jakości nadchodzących premier.</p>
+          </aside>
+
+          <div class="accordion-group">
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Polityka dywidendowa — szczegóły</button></h3>
+              <div class="accordion-panel" hidden>
+                <p>W 2025 CD Projekt połączył finansowanie developmentu z wypłatą dla akcjonariuszy. Dywidenda wypłacona w 2025 r. z zysku za 2024 r. wyniosła 99&nbsp;911 tys. PLN, czyli 1 zł na akcję, a skup akcji własnych związany z programem motywacyjnym pochłonął 22&nbsp;424 tys. PLN.</p>
+                <p>Spółka ma politykę dywidendową od 2025 r. Intencją Zarządu jest rekomendowanie wypłat dywidendy w wysokości co najmniej 25% zysku netto średniorocznie, z możliwością opóźnienia wypłaty. To sygnał, że zarząd widzi miejsce na zwrot dla akcjonariusza, ale skala wypłat pozostanie zależna od potrzeb finansowania pipeline'u i nie powinna być traktowana jako automatyczna.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 07 PIPELINE -->
+        <section id="pipeline" class="content-section">
+          <div class="section-heading">
+            <p class="section-kicker">07</p>
+            <h2>Pipeline jako źródło przyszłej wartości</h2>
+          </div>
+
+          <p class="section-thesis">Pipeline jest głównym nośnikiem potencjału wzrostu — obecny bilans kupuje czas, ale nie kupuje automatycznie sukcesu projektów.</p>
+
+          <div class="timeline" role="list" aria-label="Oś pipeline'u">
+            <button class="timeline-item is-active" type="button" role="listitem" data-timeline="witcher4">The Witcher 4</button>
+            <button class="timeline-item" type="button" role="listitem" data-timeline="cyberpunk2">Cyberpunk 2</button>
+            <button class="timeline-item" type="button" role="listitem" data-timeline="hadar">Hadar</button>
+            <button class="timeline-item" type="button" role="listitem" data-timeline="flywheel">Flywheel franczyzowy</button>
+            <button class="timeline-item" type="button" role="listitem" data-timeline="upside">Scenariusz upside</button>
+          </div>
+          <div class="timeline-detail">
+            <article class="timeline-panel is-active" data-panel="witcher4">
+              <h3>The Witcher 4</h3>
+              <p>To jeden z kluczowych testów zdolności spółki do zamiany obecnego burnu na przyszłe przychody i wysokomarżowe cash flow. Dla inwestora to nie tylko pojedyncza premiera, ale także test jakości wykonania w nowym cyklu produkcyjnym.</p>
+            </article>
+            <article class="timeline-panel" data-panel="cyberpunk2" hidden>
+              <h3>Cyberpunk 2</h3>
+              <p>Projekt wzmacnia długoterminową opcjonalność pipeline'u. Rynek będzie patrzył nie tylko na datę premiery, lecz także na sygnały dotyczące budżetu, jakości i potencjału długiego ogona monetyzacji.</p>
+            </article>
+            <article class="timeline-panel" data-panel="hadar" hidden>
+              <h3>Hadar</h3>
+              <p>Nowe <button class="glossary-term" type="button" data-term="ip">IP</button> zwiększa przestrzeń do wzrostu, ale równocześnie podnosi ryzyko wykonawcze. To typ upside, który może znacząco zwiększyć wartość, lecz wymaga cierpliwości i kapitału.</p>
+            </article>
+            <article class="timeline-panel" data-panel="flywheel" hidden>
+              <h3>Flywheel franczyzowy</h3>
+              <p>W idealnym scenariuszu spółka monetyzuje nie jednorazową premierę, ale cały cykl życia marki: sequele, dodatki, odświeżenia, sprzedaż cyfrową i rozpoznawalność uniwersum.</p>
+            </article>
+            <article class="timeline-panel" data-panel="upside" hidden>
+              <h3>Scenariusz upside</h3>
+              <p>Potencjał wzrostu należy traktować jako scenariusz warunkowy, a nie jako dowód. Pokazuje skalę możliwości, jeśli pipeline zostanie dostarczony jakościowo i terminowo.</p>
+              <p>Program motywacyjny jest sygnałem ambicji zarządu, ale nie jest prognozą finansową.</p>
+            </article>
+          </div>
+
+          <div class="scenario-switcher" aria-label="Scenariusze wyceny bez modelu liczbowego">
+            <div class="scenario-tabs" role="tablist" aria-label="Zakładki scenariuszy">
+              <button class="scenario-tab is-active" type="button" role="tab" aria-selected="true" data-scenario="bear">Niedźwiedzi</button>
+              <button class="scenario-tab" type="button" role="tab" aria-selected="false" data-scenario="base">Bazowy</button>
+              <button class="scenario-tab" type="button" role="tab" aria-selected="false" data-scenario="bull">Byczy</button>
+            </div>
+            <div class="scenario-panels">
+              <article class="scenario-panel is-active" data-scenario-panel="bear">
+                <h3>Scenariusz niedźwiedzi</h3>
+                <p>Rynek dostaje opóźnienia, wyższy od oczekiwań burn i gorszą widoczność jakości przyszłych premier. Bilans chroni przed kryzysem płynności, ale kurs może ucierpieć przez spadek wiary w konwersję pipeline'u.</p>
+              </article>
+              <article class="scenario-panel" data-scenario-panel="base" hidden>
+                <h3>Scenariusz bazowy</h3>
+                <p>Cash engine z obecnego katalogu utrzymuje się, development burn pozostaje wysoki, a rynek stopniowo dostaje kolejne potwierdzenia harmonogramu i jakości projektów. To scenariusz cierpliwego budowania wartości, nie natychmiastowej eksplozji wyników.</p>
+              </article>
+              <article class="scenario-panel" data-scenario-panel="bull" hidden>
+                <h3>Scenariusz byczy</h3>
+                <p>Wiedźmin 4, Cyberpunk 2 i kolejne <button class="glossary-term" type="button" data-term="ip">IP</button> przekładają się na mocne premiery, wysokie marże i powtarzalny cash flow. W takim układzie dzisiejszy development burn okazuje się dobrze ulokowanym kapitałem, a nie ciężarem.</p>
+              </article>
+            </div>
+          </div>
+
+          <aside class="takeaway-box">
+            <h3>Co to znaczy dla akcjonariusza</h3>
+            <p>Pipeline jest głównym nośnikiem potencjału wzrostu. Obecny bilans kupuje czas, ale nie kupuje automatycznie sukcesu projektów.</p>
+          </aside>
+        </section>
+
+        <!-- 08 RED FLAGS -->
+        <section id="red-flags" class="content-section">
+          <div class="section-heading">
+            <p class="section-kicker">08</p>
+            <h2>Red Flags i sygnały pozytywne</h2>
+          </div>
+
+          <p class="section-thesis">Główne ryzyka dotyczą jakości wykonania pipeline'u, nie płynności — bilans jest mocny, ale nie chroni wyceny przed rozczarowaniem jakością wykonania pipeline'u.</p>
+
+          <div class="risk-grid">
+            <article class="risk-card">
+              <button class="risk-trigger" type="button" aria-expanded="false"><span>Ryzyko wykonania</span></button>
+              <div class="risk-body" hidden>
+                <p><strong>Dlaczego to ważne:</strong> Nawet bardzo mocny bilans nie obroni wyceny, jeśli spółka nie dostarczy jakości i harmonogramu premier.</p>
+                <p><strong>Na co patrzeć:</strong> Sygnały o postępie prac, jakości milestone'ów i zmianach priorytetów projektowych.</p>
+                <p><strong>Potencjalny wpływ:</strong> Rozczarowanie wykonaniem może obniżyć mnożniki rynkowe mimo dobrej płynności.</p>
+              </div>
+            </article>
+            <article class="risk-card">
+              <button class="risk-trigger" type="button" aria-expanded="false"><span>Ryzyko opóźnień</span></button>
+              <div class="risk-body" hidden>
+                <p><strong>Dlaczego to ważne:</strong> Opóźnienia wydłużają okres, w którym gotówka jest konsumowana przez development bez monetyzacji.</p>
+                <p><strong>Na co patrzeć:</strong> Harmonogram milestone'ów, komunikację zarządu i przesunięcia zasobów między projektami.</p>
+                <p><strong>Potencjalny wpływ:</strong> Dłuższy runway do premiery może zwiększać burn i obniżać zaufanie rynku.</p>
+              </div>
+            </article>
+            <article class="risk-card">
+              <button class="risk-trigger" type="button" aria-expanded="false"><span>Ryzyko jakości</span></button>
+              <div class="risk-body" hidden>
+                <p><strong>Dlaczego to ważne:</strong> W modelu <button class="glossary-term" type="button" data-term="ip">IP</button> jakość premiery wpływa na sprzedaż dnia pierwszego, długi ogon i reputację franczyzy.</p>
+                <p><strong>Na co patrzeć:</strong> Opinie graczy, gotowość technologiczną i tempo szlifowania produktu przed premierą.</p>
+                <p><strong>Potencjalny wpływ:</strong> Słaba jakość może zniszczyć stopę zwrotu z kilkuletnich nakładów rozwojowych.</p>
+              </div>
+            </article>
+            <article class="risk-card">
+              <button class="risk-trigger" type="button" aria-expanded="false"><span>Ryzyko kapitalizacji i impairmentu</span></button>
+              <div class="risk-body" hidden>
+                <p><strong>Dlaczego to ważne:</strong> Rosnące aktywo prac rozwojowych musi zostać obronione przyszłą sprzedażą i marżą.</p>
+                <p><strong>Na co patrzeć:</strong> Założenia kapitalizacji, tempo <button class="glossary-term" type="button" data-term="amortization">amortyzacji</button> i ewentualne przesłanki utraty wartości.</p>
+                <p><strong>Potencjalny wpływ:</strong> Gorsza konwersja projektu może skończyć się presją na wynik i narrację inwestorską.</p>
+              </div>
+            </article>
+            <article class="risk-card">
+              <button class="risk-trigger" type="button" aria-expanded="false"><span>Ryzyko oczekiwań rynku</span></button>
+              <div class="risk-body" hidden>
+                <p><strong>Dlaczego to ważne:</strong> Kurs może już dyskontować sukces przyszłych premier szybciej niż rosną fundamenty.</p>
+                <p><strong>Na co patrzeć:</strong> Relację wyceny do jakości komunikowanych postępów pipeline'u.</p>
+                <p><strong>Potencjalny wpływ:</strong> Nawet solidne wyniki bieżące mogą nie wystarczyć, jeśli oczekiwania były wyższe.</p>
+              </div>
+            </article>
+            <article class="risk-card">
+              <button class="risk-trigger" type="button" aria-expanded="false"><span>Ryzyko zespołu / technologii</span></button>
+              <div class="risk-body" hidden>
+                <p><strong>Dlaczego to ważne:</strong> Wielostudiowy model produkcji zwiększa złożoność zarządzania ludźmi, narzędziami i odpowiedzialnością.</p>
+                <p><strong>Na co patrzeć:</strong> Skalowanie zespołów, spójność technologii oraz tempo współpracy między lokalizacjami.</p>
+                <p><strong>Potencjalny wpływ:</strong> Problemy organizacyjne mogą przełożyć się na opóźnienia, wzrost kosztów i spadek jakości.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-grid">
+            <div class="note-card">
+              <h3>Najważniejsze czerwone flagi 2025</h3>
+              <ul class="bullet-list">
+                <li>Development burn rośnie bardzo szybko: nakłady na prace rozwojowe +105,9% r/r.</li>
+                <li>Koszty sprzedaży rosną szybciej niż przychody: +29,4% vs +8,6%.</li>
+                <li>Zysk netto razem zawiera efekt GOG, więc może zawyżać obraz powtarzalnej rentowności.</li>
+                <li>Płynne rezerwy finansowe spadły o 147,1 mln zł mimo wysokiego CFO.</li>
+                <li>Wycena akcji może wyprzedzać fundamenty, jeśli rynek już zakłada sukces przyszłych premier.</li>
+              </ul>
+            </div>
+            <aside class="takeaway-box">
+              <h3>Pozytywne sygnały</h3>
+              <ul class="bullet-list">
+                <li>Brak kredytów i pożyczek.</li>
+                <li>Płynne rezerwy finansowe 1&nbsp;324&nbsp;910 tys. PLN.</li>
+                <li>CFO 590&nbsp;880 tys. PLN.</li>
+                <li>CCR na działalności kontynuowanej 1,13.</li>
+                <li>EBIT +28,4% r/r.</li>
+                <li>Rentowność netto działalności kontynuowanej 60,1%.</li>
+                <li>Current ratio 7,40.</li>
+                <li>Dług do kapitału własnego tylko 0,06.</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <!-- 09 FINALNY WERDYKT -->
+        <section id="final-view" class="content-section">
+          <div class="section-heading">
+            <p class="section-kicker">09</p>
+            <h2>Finalny werdykt</h2>
+          </div>
+          <div class="prose-card final-view-card">
+            <p>CD Projekt to finansowo bezpiecznie ustawiona spółka wysokiego ryzyka projektowego. Gotówka daje czas. Bilans daje bezpieczeństwo. Pipeline daje potencjał wzrostu. Ryzyko wykonania zdecyduje o wartości dla akcjonariusza.</p>
+            <p>Dane za 2025 pokazują bardzo dobrą kondycję bieżącego biznesu: przychody wzrosły do 866&nbsp;989 tys. PLN, EBIT do 470&nbsp;648 tys. PLN, CFO do 590&nbsp;880 tys. PLN, a rentowność netto działalności kontynuowanej sięgnęła 60,1%. Jednocześnie nakłady na prace rozwojowe wzrosły do 513&nbsp;241 tys. PLN, a aktywo prac rozwojowych do 1&nbsp;148&nbsp;143 tys. PLN, co przesuwa środek ciężkości analizy na pipeline.</p>
+            <p>To oznacza, że ryzyko inwestycyjne w CD Projekcie nie polega dziś głównie na wypłacalności, lecz na jakości egzekucji. Jeśli Wiedźmin 4, Cyberpunk 2 i kolejne <button class="glossary-term" type="button" data-term="ip">IP</button> dostarczą jakość, harmonogram i marże, obecny burn może zostać odczytany jako dobrze ulokowany kapitał. Jeśli nie, mocny bilans jedynie kupi czas, ale nie obroni wyceny.</p>
+          </div>
+        </section>
+
+        <!-- 10 APPENDIX -->
+        <section id="appendix" class="content-section">
+          <div class="section-heading">
+            <p class="section-kicker">10</p>
+            <h2>Appendix</h2>
+          </div>
+          <p class="section-intro">Szczegółowe tabele wskaźników, analiza kapitału obrotowego, data requests i źródła. Wszystkie pozycje domyślnie zwinięte.</p>
+
+          <div class="accordion-group">
+
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Kapitał obrotowy i cash conversion</button></h3>
+              <div class="accordion-panel" hidden>
+                <p>CCC jest ujemny: -151 dni w 2025 wobec -184 dni w 2024. Sugeruje to, że kapitał obrotowy nie blokuje gotówki, ale klasyczny model DSO/DIO/DPO lepiej pasuje do przemysłu i handlu niż do cyfrowego modelu sprzedaży gier.</p>
+                <p>Pogorszenie CCC z -184 do -151 dni wynika głównie ze spadku DPO. Głównym magazynem wartości są nakłady na gry w produkcji, nie zapasy czy należności.</p>
+                <aside class="takeaway-box" style="margin:1rem 0">
+                  <h3>Wniosek inwestora</h3>
+                  <p>Working capital jest użyteczny jako check pomocniczy, ale nie powinien przesłaniać pipeline'u, harmonogramu premier i kapitalizacji developmentu.</p>
+                </aside>
+                <div class="data-table-card">
+                  <table>
+                    <caption>Kapitał obrotowy i cash conversion</caption>
+                    <thead>
+                      <tr><th scope="col">Pozycja</th><th scope="col">2024</th><th scope="col">2025</th><th scope="col">Komentarz</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><th scope="row">KON</th><td>83 454</td><td>81 273</td><td>Zmiana KON = -2 181 tys. PLN.</td></tr>
+                      <tr><th scope="row">DSO</th><td>77 dni</td><td>53 dni</td><td>Poprawa ściągalności należności.</td></tr>
+                      <tr><th scope="row">DIO</th><td>6 dni</td><td>11 dni</td><td>Nadal mało istotne wobec modelu cyfrowego.</td></tr>
+                      <tr><th scope="row">DPO</th><td>266 dni</td><td>215 dni</td><td>Niższe DPO pogarsza CCC.</td></tr>
+                      <tr><th scope="row">CCC</th><td>-184 dni</td><td>-151 dni</td><td>Nadal ujemny, ale mniej korzystny niż rok wcześniej.</td></tr>
+                      <tr><th scope="row">Cash Flow Sales</th><td>n/d</td><td>472 829</td><td>Liczony jako EBIT minus zmiana KON; substytut: EBIT.</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Pełna tabela wskaźników 2024–2025</button></h3>
+              <div class="accordion-panel" hidden>
+                <div class="data-table-card">
+                  <table>
+                    <caption>Pełna tabela wskaźników 2024–2025</caption>
+                    <thead>
+                      <tr><th scope="col">Wskaźnik</th><th scope="col">2024</th><th scope="col">2025</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><th scope="row">Current Ratio</th><td>6,32</td><td>7,40</td></tr>
+                      <tr><th scope="row">Quick Ratio</th><td>6,31</td><td>7,39</td></tr>
+                      <tr><th scope="row">Cash Ratio</th><td>0,54</td><td>0,63</td></tr>
+                      <tr><th scope="row">Liquid Reserve Coverage</th><td>6,41</td><td>7,35</td></tr>
+                      <tr><th scope="row">Debt to Equity</th><td>0,09</td><td>0,06</td></tr>
+                      <tr><th scope="row">Debt to Assets</th><td>0,08</td><td>0,06</td></tr>
+                      <tr><th scope="row">Interest Coverage</th><td>n/d</td><td>n/d</td></tr>
+                      <tr><th scope="row">Net Profit Margin — zysk netto razem</th><td>55,64%</td><td>68,59%</td></tr>
+                      <tr><th scope="row">Net Profit Margin — działalność kontynuowana</th><td>55,49%</td><td>60,08%</td></tr>
+                      <tr><th scope="row">ROA</th><td>14,68%</td><td>16,98%</td></tr>
+                      <tr><th scope="row">ROE</th><td>16,02%</td><td>18,08%</td></tr>
+                      <tr><th scope="row">CCR — zysk netto razem</th><td>1,17</td><td>0,99</td></tr>
+                      <tr><th scope="row">CCR — działalność kontynuowana</th><td>1,18</td><td>1,13</td></tr>
+                      <tr><th scope="row">DSO</th><td>77 dni</td><td>53 dni</td></tr>
+                      <tr><th scope="row">DIO</th><td>6 dni</td><td>11 dni</td></tr>
+                      <tr><th scope="row">DPO</th><td>266 dni</td><td>215 dni</td></tr>
+                      <tr><th scope="row">CCC</th><td>-184 dni</td><td>-151 dni</td></tr>
+                      <tr><th scope="row">Cash Flow Sales</th><td>n/d</td><td>472 829</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Trend analysis 2025 vs 2024</button></h3>
+              <div class="accordion-panel" hidden>
+                <div class="data-table-card">
+                  <table>
+                    <caption>Trend analysis 2025 vs 2024</caption>
+                    <thead>
+                      <tr><th scope="col">Pozycja</th><th scope="col">Zmiana r/r</th><th scope="col">Ocena</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><th scope="row">Przychody</th><td>+8,6%</td><td>Pozytywne, wzrost sprzedaży.</td></tr>
+                      <tr><th scope="row">COGS</th><td>-33,0%</td><td>Pozytywne, koszt własny spadł mimo wzrostu przychodów.</td></tr>
+                      <tr><th scope="row">Koszty sprzedaży</th><td>+29,4%</td><td>Negatywne, koszt rośnie szybciej niż przychody.</td></tr>
+                      <tr><th scope="row">Koszty ogólnego zarządu</th><td>-5,6%</td><td>Pozytywne, koszt spada przy wzroście sprzedaży.</td></tr>
+                      <tr><th scope="row">EBIT</th><td>+28,4%</td><td>Pozytywne, poprawa operacyjna.</td></tr>
+                      <tr><th scope="row">Zysk netto z działalności kontynuowanej</th><td>+17,6%</td><td>Pozytywne.</td></tr>
+                      <tr><th scope="row">Zysk netto razem</th><td>+33,9%</td><td>Pozytywne, ale z efektem GOG.</td></tr>
+                      <tr><th scope="row">CFO</th><td>+13,3%</td><td>Pozytywne.</td></tr>
+                      <tr><th scope="row">Nakłady na prace rozwojowe</th><td>+105,9%</td><td>Strategicznie zrozumiałe, ale to główny development burn.</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Vertical analysis</button></h3>
+              <div class="accordion-panel" hidden>
+                <div class="data-table-card">
+                  <table>
+                    <caption>Vertical analysis</caption>
+                    <thead>
+                      <tr><th scope="col">Pozycja</th><th scope="col">2024</th><th scope="col">2025</th><th scope="col">Ocena</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><th scope="row">COGS / przychody</th><td>14,8%</td><td>9,1%</td><td>Pozytywne, koszt zjada mniejszą część przychodów.</td></tr>
+                      <tr><th scope="row">Koszty sprzedaży / przychody</th><td>11,5%</td><td>13,8%</td><td>Negatywne, koszt zjada większą część przychodów.</td></tr>
+                      <tr><th scope="row">Koszty ogólnego zarządu / przychody</th><td>29,7%</td><td>25,8%</td><td>Pozytywne.</td></tr>
+                      <tr><th scope="row">Koszty prac badawczych / przychody</th><td>9,8%</td><td>4,5%</td><td>Pozytywne, ale część nakładów przechodzi do aktywów jako prace rozwojowe.</td></tr>
+                      <tr><th scope="row">EBIT / przychody</th><td>45,9%</td><td>54,3%</td><td>Pozytywne.</td></tr>
+                      <tr><th scope="row">Zysk netto kontynuowany / przychody</th><td>55,5%</td><td>60,1%</td><td>Pozytywne.</td></tr>
+                      <tr><th scope="row">Zysk netto razem / przychody</th><td>55,6%</td><td>68,6%</td><td>Pozytywne, ale z efektem GOG.</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Luki danych i dalsze potrzeby analityczne</button></h3>
+              <div class="accordion-panel" hidden>
+                <div class="section-grid">
+                  <div class="note-card">
+                    <h3>Luki danych</h3>
+                    <ul class="bullet-list">
+                      <li>Dokładniejszy harmonogram nakładów na poszczególne projekty.</li>
+                      <li>Szczegółowy pipeline milestone schedule.</li>
+                      <li>Oczekiwany marketing spend przed premierami.</li>
+                      <li>Rozbicie przychodów według tytułów i platform.</li>
+                      <li>Deferred revenue roll-forward.</li>
+                      <li>Szczegółowe założenia kapitalizacji i amortyzacji nakładów na prace rozwojowe.</li>
+                    </ul>
+                  </div>
+                  <div class="note-card">
+                    <h3>Pełna lista CFO data requests</h3>
+                    <ul class="bullet-list">
+                      <li>AR aging</li>
+                      <li>AP aging</li>
+                      <li>Inventory aging / obsolescence</li>
+                      <li>Debt maturity schedule</li>
+                      <li>Deferred revenue roll-forward</li>
+                    </ul>
+                    <p style="color:var(--text-muted);margin-top:0.75rem;font-size:0.88rem;">W CD Projekcie te klasyczne schedules są mniej centralne niż w spółkach produkcyjnych lub dystrybucyjnych, ale nadal pomagają domknąć pełną analizę CFO.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="accordion-item">
+              <h3><button class="accordion-trigger" type="button" aria-expanded="false">Źródła</button></h3>
+              <div class="accordion-panel" hidden>
+                <ul class="bullet-list">
+                  <li>Skonsolidowane sprawozdanie finansowe Grupy CD PROJEKT za 2025 r.</li>
+                  <li>Sprawozdanie Zarządu z działalności Grupy CD PROJEKT za 2025 r.</li>
+                  <li>Prezentacja Grupy CD PROJEKT — wyniki FY 2025.</li>
+                  <li>Dane 2024 użyte jako dane przekształcone, jeśli porównywane z 2025.</li>
+                  <li>Interest Coverage: n/d — brak kredytów i pożyczek / brak klasycznego ryzyka obsługi długu odsetkowego.</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+      </main>
+    </div><!-- /layout-body -->
+  </div><!-- /page-shell -->
+
+  <div class="tooltip-layer" aria-live="polite">
+    <div class="glossary-popover" id="glossary-popover" hidden>
+      <h3 id="glossary-title">Definicja</h3>
+      <p id="glossary-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
