@@ -786,3 +786,26 @@ main section[id], main .hero-panel { scroll-margin-top: 2rem; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+.hero-actions {
+  margin-top: 1rem;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--accent-border);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-button:hover,
+.hero-button:focus-visible {
+  border-color: var(--accent);
+  color: #fff;
+}
